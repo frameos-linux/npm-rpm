@@ -2,7 +2,7 @@
 
 Name:           npm
 Version:        0.2.14
-Release:        4
+Release:        5%{?dist}
 Summary:        A package manager for Node.js
 Group:          Development/Libraries/Other
 License:        MIT
@@ -82,6 +82,9 @@ mv -f %{buildroot}/usr/lib/node/npm/package.json.js.temp %{buildroot}/usr/lib/no
 
 
 %changelog
+* Wed Apr 27 2011 Sergio Rubio <rubiojr@frameos.org> - 0.2.14-5
+- add dist tag to Release
+
 * Thu Apr 07 2011 Sergio Rubio <rubiojr@frameos.org> - 0.2.14-4
 - fix build defining __arch_install_post
 
